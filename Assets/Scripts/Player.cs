@@ -32,4 +32,12 @@ public class Player : MonoBehaviour
     {
         
     }
+
+    public void ChoicePlayer(int i)
+    {
+        if (i == 0)
+        {
+            
+        }
+    }
 }
