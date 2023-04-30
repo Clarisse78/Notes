@@ -37,14 +37,17 @@ public class Menu : MonoBehaviour
             }
             for (int i = 0; i < allSave.Count; i++)
             {
-                for (int j = 0; j <  allSave[i].NotesAsses.Count; j++)
+                if (allSave[i] is not SI)
                 {
-                    for (int k = 0; k < allSave[i].NotesAsses[j].notes.Count; k++)
+                    for (int j = 0; j <  allSave[i].NotesAsses.Count; j++)
                     {
-                        allSave[i].NotesAsses[j].notes[k].UpdateTextSave(float.Parse(saveNoteAs[i][j].Split("|")[k]));
+                        for (int k = 0; k < allSave[i].NotesAsses[j].notes.Count; k++)
+                        {
+                            allSave[i].NotesAsses[j].notes[k].UpdateTextSave(float.Parse(saveNoteAs[i][j].Split("|")[k]));
+                        }
                     }
+                    allMatiere[i].SetActive(false);
                 }
-                allMatiere[i].SetActive(false);
             }
             CalculMoyenneGeneral();
         }
@@ -69,18 +72,21 @@ public class Menu : MonoBehaviour
         string save = "";
         for (int i = 0; i < allSave.Count; i++)
         {
-            for (int j = 0; j < allSave[i].NotesAsses.Count; j++)
+            if (allSave[i] is not SI)
             {
-                for (int k = 0; k < allSave[i].NotesAsses[j].notes.Count-1; k++)
+                for (int j = 0; j < allSave[i].NotesAsses.Count; j++)
                 {
-                    save += $"{allSave[i].NotesAsses[j].notes[k].note}";
-                    save += "|";
+                    for (int k = 0; k < allSave[i].NotesAsses[j].notes.Count-1; k++)
+                    {
+                        save += $"{allSave[i].NotesAsses[j].notes[k].note}";
+                        save += "|";
+                    }
+                    save += $"{allSave[i].NotesAsses[j].notes[^1].note}";
+                    save += "*";
+                    save += "\n";
                 }
-                save += $"{allSave[i].NotesAsses[j].notes[^1].note}";
-                save += "*";
-                save += "\n";
+                save += "FIN MATIERE";
             }
-            save += "FIN MATIERE";
         }
         File.WriteAllText(Application.dataPath + "/" + "save" + ".txt", save);
     }
@@ -89,10 +95,11 @@ public class Menu : MonoBehaviour
     {
         float phase = 0;
         int coef = 0;
+        CalculSI();
         for (int i = 0; i < allSave.Count; i++)
         {
             var ok = allSave[i].GetComponent<Notes>();
-            if (ok.moyenneG != -1)
+            if (!ok.isUCUE && ok.moyenneG != -1)
             {
                 phase += ok.moyenneG * ok.megaCoef;
                 coef += ok.megaCoef;
@@ -106,6 +113,17 @@ public class Menu : MonoBehaviour
         else
         {
             moyenneGENERAL.text = "Moyenne générale : " + finish.ToString("G", CultureInfo.InvariantCulture);
+        }
+    }
+
+    public void CalculSI()
+    {
+        for (int i = 0; i < allSave.Count; i++)
+        {
+            if (allSave[i] is SI)
+            {
+                allSave[i].moyenneGtext();
+            }
         }
     }
 

@@ -11,6 +11,7 @@ public abstract class Notes : MonoBehaviour
     public string name;
     public List<NotesAs> NotesAsses;
     public int megaCoef;
+    public bool isUCUE;
     
     // Start is called before the first frame update
     void Start()
