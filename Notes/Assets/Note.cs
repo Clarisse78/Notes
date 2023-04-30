@@ -8,14 +8,20 @@ using UnityEngine.UI;
 
 public class Note : MonoBehaviour
 {
-    public double note;
+    public float note;
 
     public TextMeshProUGUI notetext;
+    
+    public float coeff;
 
+    public GameObject InputField;
+
+    public NotesAs parent;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        note = -1;
         notetext.text = note.ToString("G", CultureInfo.InvariantCulture);
     }
     
@@ -26,16 +32,33 @@ public class Note : MonoBehaviour
         {
             oui += notetext.text[i];
         }
-        if (float.TryParse(oui,  NumberStyles.Float, CultureInfo.CreateSpecificCulture("en-US"), out float floatValue))
+        if (float.TryParse(oui,  NumberStyles.Float, CultureInfo.CreateSpecificCulture("en-US"), out float floatValue) && floatValue >= 0 && floatValue <= 20)
         {
-            note = floatValue;
-            Debug.Log("Le texte a été converti en float avec succès : " + floatValue);
+            note = (float)Math.Round(floatValue,2);
+            InputField.GetComponent<TMP_InputField>().text = note.ToString("G", CultureInfo.InvariantCulture);
+            parent.calculMoyenne();
         }
         else
         {
-            notetext.text = "N/a";
-            Debug.Log(notetext.text);
-            Debug.Log("Impossible de convertir le texte en float.");
+            InputField.GetComponent<TMP_InputField>().text = "N/a";
+            note = -1;
+            parent.calculMoyenne();
+        }
+    }
+
+    public void UpdateTextSave(float noteSave)
+    {
+        if (noteSave != -1)
+        {
+            note = noteSave;
+            InputField.GetComponent<TMP_InputField>().text = note.ToString("G", CultureInfo.InvariantCulture);
+            parent.calculMoyenne();
+        }
+        else
+        {
+            InputField.GetComponent<TMP_InputField>().text = "N/a";
+            note = -1;
+            parent.calculMoyenne();
         }
     }
 
