@@ -23,6 +23,8 @@ public class Menu : MonoBehaviour
         if (!File.Exists(Application.dataPath + "/save.txt"))
         {
             File.Create(Application.dataPath + "/save.txt");
+            for (int i = 0; i < allMatiere.Count; i++)
+                allMatiere[i].SetActive(false);
         }
         else
         {
@@ -105,5 +107,10 @@ public class Menu : MonoBehaviour
         {
             moyenneGENERAL.text = "Moyenne générale : " + finish.ToString("G", CultureInfo.InvariantCulture);
         }
+    }
+
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }
