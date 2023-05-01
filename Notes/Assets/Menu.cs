@@ -58,8 +58,8 @@ public class Menu : MonoBehaviour
                     allSave[i].moyenneGtext();
                 }
             }
-            CalculMoyenneGeneral();
             TpProg.instance.Min();
+            CalculMoyenneGeneral();
         }
         menuPrincipale = GameObject.FindGameObjectWithTag("Menu");
     }

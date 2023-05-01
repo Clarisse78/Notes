@@ -119,7 +119,6 @@ public class TpProg : MonoBehaviour
                 {
                     saveMinNote = actualTp.note;
                 }
-                //actualTp.note = -1;
                 actualTp.isnotCount = true;
                 currentMinTp.isnotCount = false;
                 actualTp.notetext.color = Color.red;
@@ -135,7 +134,6 @@ public class TpProg : MonoBehaviour
                 {
                     saveMinNote = actualTp.note;
                 }
-                //actualTp.note = -1;
                 actualTp.isnotCount = true;
                 currentMinTp.isnotCount = false;
                 UpdateTextNoteMin();
