@@ -17,9 +17,13 @@ public class Menu : MonoBehaviour
 
     public TextMeshProUGUI moyenneGENERAL;
 
+    public static GameObject CurrentUCUE;
+
+    public static Menu instance;
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         if (!File.Exists(Application.dataPath + "/save.txt"))
         {
             File.Create(Application.dataPath + "/save.txt");
@@ -37,7 +41,7 @@ public class Menu : MonoBehaviour
             }
             for (int i = 0; i < allSave.Count; i++)
             {
-                if (allSave[i] is not SI)
+                if (allSave[i] is not SI && allSave[i] is not PtAnac)
                 {
                     for (int j = 0; j <  allSave[i].NotesAsses.Count; j++)
                     {
@@ -47,6 +51,11 @@ public class Menu : MonoBehaviour
                         }
                     }
                     allMatiere[i].SetActive(false);
+                }
+                else if (allSave[i] is PtAnac)
+                {
+                    allSave[i].moyenneG = float.Parse(saveNoteAs[i][0].Split("|")[0]);
+                    allSave[i].moyenneGtext();
                 }
             }
             CalculMoyenneGeneral();
@@ -72,7 +81,7 @@ public class Menu : MonoBehaviour
         string save = "";
         for (int i = 0; i < allSave.Count; i++)
         {
-            if (allSave[i] is not SI)
+            if (allSave[i] is not SI && allSave[i] is not PtAnac)
             {
                 for (int j = 0; j < allSave[i].NotesAsses.Count; j++)
                 {
@@ -85,6 +94,14 @@ public class Menu : MonoBehaviour
                     save += "*";
                     save += "\n";
                 }
+                save += "FIN MATIERE";
+            }
+            else if (allSave[i] is PtAnac)
+            {
+                save += $"{allSave[i].moyenneG}";
+                save += "|";
+                save += "*";
+                save += "\n";
                 save += "FIN MATIERE";
             }
         }

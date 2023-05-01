@@ -5,6 +5,8 @@ using UnityEngine;
 public class MatiereEnter : MonoBehaviour
 {
     public GameObject matiere;
+
+    public GameObject UCUE;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +24,21 @@ public class MatiereEnter : MonoBehaviour
         matiere.SetActive(true);
         Menu.CurrentMatiere = matiere;
         Menu.menuPrincipale.SetActive(false);
+    }
+
+    public void AffichageUCUE()
+    {
+        if (Menu.CurrentUCUE is not null)
+            Menu.CurrentUCUE.SetActive(false);
+        if (UCUE != Menu.CurrentUCUE)
+        {
+            UCUE.SetActive(true);
+            Menu.CurrentUCUE = UCUE;
+        }
+        else
+        {
+            UCUE.SetActive(false);
+            Menu.CurrentUCUE = null;
+        }
     }
 }
