@@ -18,6 +18,8 @@ public class Note : MonoBehaviour
 
     public NotesAs parent;
 
+    public bool isnotCount;
+
     // Start is called before the first frame update
     void Awake()
     {

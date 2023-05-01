@@ -18,6 +18,8 @@ public class TpProg : MonoBehaviour
     public GameObject parent;
 
     public static float saveMinNote;
+
+    public static TpProg instance;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class TpProg : MonoBehaviour
         for (int i = 0; i < parent.transform.childCount; i++)
             allNotesTp.Add(AllTp[i].note);
         Min();
+        instance = this;
     }
 
     // Update is called once per frame
@@ -40,7 +43,14 @@ public class TpProg : MonoBehaviour
     public void AddTPNote(int current)
     {
         //Debug.Log(currentMinTp.note);
-        allNotesTp[current] = actualTp.note;
+        if (actualTp.note < 0 || actualTp.note > 20)
+        {
+            allNotesTp[current] = -1;
+        }
+        else
+        {
+            allNotesTp[current] = actualTp.note;
+        }
         if (currentMinTp != null && actualTp.notetext == currentMinTp.notetext)
         {
             if (actualTp.note == -1)
@@ -101,15 +111,33 @@ public class TpProg : MonoBehaviour
         {
             if (currentMinTp == null)
             {
-                saveMinNote = actualTp.note;
-                actualTp.note = -1;
+                if (actualTp.note < 0 || actualTp.note > 20)
+                {
+                    saveMinNote = -1;
+                }
+                else
+                {
+                    saveMinNote = actualTp.note;
+                }
+                //actualTp.note = -1;
+                actualTp.isnotCount = true;
+                currentMinTp.isnotCount = false;
                 actualTp.notetext.color = Color.red;
                 currentMinTp = actualTp;
             }
             else if (actualTp.note < saveMinNote)
             {
-                saveMinNote = actualTp.note;
-                actualTp.note = -1;
+                if (actualTp.note < 0 || actualTp.note > 20)
+                {
+                    saveMinNote = -1;
+                }
+                else
+                {
+                    saveMinNote = actualTp.note;
+                }
+                //actualTp.note = -1;
+                actualTp.isnotCount = true;
+                currentMinTp.isnotCount = false;
                 UpdateTextNoteMin();
                 currentMinTp = actualTp;
             }
@@ -117,6 +145,7 @@ public class TpProg : MonoBehaviour
         else if (actualTp.note == -1)
         {
             actualTp.notetext.color = Color.black;
+            actualTp.isnotCount = false;
             var withoutone = new List<float>();
             for (int i = 0; i < allNotesTp.Count; i++)
             {
@@ -133,6 +162,7 @@ public class TpProg : MonoBehaviour
                     currentMinTp.notetext.color = Color.red;
                 }
                 saveMinNote = withoutone.Min();
+                currentMinTp.isnotCount = true;
             }
             else
             {
@@ -151,6 +181,10 @@ public class TpProg : MonoBehaviour
 
     public void Min()
     {
+        for (int i = 0; i < actualTp.parent.transform.childCount; i++)
+            AllTp.Add(parent.transform.GetChild(i).GetComponent<Note>());
+        for (int i = 0; i < parent.transform.childCount; i++)
+            allNotesTp.Add(AllTp[i].note);
         var withoutone = new List<float>();
         for (int i = 0; i < allNotesTp.Count; i++)
         {
@@ -162,7 +196,9 @@ public class TpProg : MonoBehaviour
         if (withoutone.Count > 0)
         {
             currentMinTp = AllTp[allNotesTp.IndexOf(withoutone.Min())];
+            currentMinTp.notetext.color = Color.red;
             saveMinNote = withoutone.Min();
+            currentMinTp.isnotCount = true;
         }
         else
         {

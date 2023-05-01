@@ -31,7 +31,7 @@ public class NotesAs : MonoBehaviour
         float finalCoeff = 0;
         for (int i = 0; i < notes.Count; i++)
         {
-            if (notes[i].note != -1)
+            if (notes[i].note != -1 && !notes[i].isnotCount)
             {
                 finalNote += (notes[i].note * notes[i].coeff);
                 finalCoeff += notes[i].coeff;
