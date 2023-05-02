@@ -3607,6 +3607,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1312429830}
   parent: {fileID: 1429174448}
+  isnotCount: 0
 --- !u!1 &63188662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,6 +4446,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1543309699}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &76780187
 GameObject:
   m_ObjectHideFlags: 0
@@ -6576,6 +6578,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 20159838}
   parent: {fileID: 1391345353}
+  isnotCount: 0
 --- !u!1 &129987124
 GameObject:
   m_ObjectHideFlags: 0
@@ -10196,6 +10199,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1898307}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &179686863
 GameObject:
   m_ObjectHideFlags: 0
@@ -11867,6 +11871,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1046572627}
   parent: {fileID: 1572761928}
+  isnotCount: 0
 --- !u!1 &206276343
 GameObject:
   m_ObjectHideFlags: 0
@@ -13888,6 +13893,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 252858503}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &236252389
 GameObject:
   m_ObjectHideFlags: 0
@@ -14215,6 +14221,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1151912915}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &238873425
 GameObject:
   m_ObjectHideFlags: 0
@@ -16018,6 +16025,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1684427815}
   parent: {fileID: 2082287497}
+  isnotCount: 0
 --- !u!1 &262903988
 GameObject:
   m_ObjectHideFlags: 0
@@ -18441,6 +18449,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2025302752}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &309875105
 GameObject:
   m_ObjectHideFlags: 0
@@ -19086,6 +19095,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1175879988}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &328616415
 GameObject:
   m_ObjectHideFlags: 0
@@ -20675,6 +20685,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 379471999}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &366178855
 GameObject:
   m_ObjectHideFlags: 0
@@ -21177,6 +21188,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1424841824}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &379471999
 GameObject:
   m_ObjectHideFlags: 0
@@ -22350,6 +22362,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1435039799}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &393509483
 GameObject:
   m_ObjectHideFlags: 0
@@ -22800,6 +22813,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1633566411}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &399274193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24467,6 +24481,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 390184534}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &455887250
 GameObject:
   m_ObjectHideFlags: 0
@@ -25904,6 +25919,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 474435906}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &496389935
 GameObject:
   m_ObjectHideFlags: 0
@@ -25961,6 +25977,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 953039035}
   parent: {fileID: 593145716}
+  isnotCount: 0
 --- !u!1 &497570769
 GameObject:
   m_ObjectHideFlags: 0
@@ -27320,6 +27337,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1381624923}
   parent: {fileID: 1793667739}
+  isnotCount: 0
 --- !u!1 &542131061
 GameObject:
   m_ObjectHideFlags: 0
@@ -27721,6 +27739,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1229141133}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &547318357
 GameObject:
   m_ObjectHideFlags: 0
@@ -27778,6 +27797,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1641333558}
   parent: {fileID: 679750497}
+  isnotCount: 0
 --- !u!1 &550165133
 GameObject:
   m_ObjectHideFlags: 0
@@ -28636,6 +28656,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1271129684}
   parent: {fileID: 1292780465}
+  isnotCount: 0
 --- !u!1 &565507718
 GameObject:
   m_ObjectHideFlags: 0
@@ -30027,6 +30048,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 92823623}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &603072370
 GameObject:
   m_ObjectHideFlags: 0
@@ -33087,6 +33109,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 908041501}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &679750496
 GameObject:
   m_ObjectHideFlags: 0
@@ -34798,6 +34821,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 418841785}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &712173838
 GameObject:
   m_ObjectHideFlags: 0
@@ -35787,6 +35811,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1487522953}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &739396740
 GameObject:
   m_ObjectHideFlags: 0
@@ -36218,6 +36243,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1363333757}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &752438456
 GameObject:
   m_ObjectHideFlags: 0
@@ -36689,6 +36715,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 380505531}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &770603014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37629,6 +37656,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 708886162}
   parent: {fileID: 966081028}
+  isnotCount: 0
 --- !u!1 &798310663
 GameObject:
   m_ObjectHideFlags: 0
@@ -39415,6 +39443,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1835053191}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &825216288
 GameObject:
   m_ObjectHideFlags: 0
@@ -41663,6 +41692,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1464267957}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &857421024
 GameObject:
   m_ObjectHideFlags: 0
@@ -42711,6 +42741,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1718337225}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &871049806
 GameObject:
   m_ObjectHideFlags: 0
@@ -43781,6 +43812,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1632639443}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &886801044
 GameObject:
   m_ObjectHideFlags: 0
@@ -45089,6 +45121,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1577848635}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &908041501
 GameObject:
   m_ObjectHideFlags: 0
@@ -45658,6 +45691,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1278107560}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &921406228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45885,6 +45919,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1688303383}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &928118554
 GameObject:
   m_ObjectHideFlags: 0
@@ -46141,6 +46176,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 256724990}
   parent: {fileID: 1687224274}
+  isnotCount: 0
 --- !u!1 &940733339
 GameObject:
   m_ObjectHideFlags: 0
@@ -46800,6 +46836,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 233322336}
   parent: {fileID: 722642874}
+  isnotCount: 0
 --- !u!1 &959091801
 GameObject:
   m_ObjectHideFlags: 0
@@ -49298,6 +49335,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 722760740}
   parent: {fileID: 1857503495}
+  isnotCount: 0
 --- !u!1 &1033729205
 GameObject:
   m_ObjectHideFlags: 0
@@ -50896,6 +50934,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1106119349}
   parent: {fileID: 1775638328}
+  isnotCount: 0
 --- !u!1 &1070475358
 GameObject:
   m_ObjectHideFlags: 0
@@ -51329,6 +51368,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 130065446}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &1085371669
 GameObject:
   m_ObjectHideFlags: 0
@@ -52836,6 +52876,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1319531500}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &1106119349
 GameObject:
   m_ObjectHideFlags: 0
@@ -53389,6 +53430,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 208263766}
   parent: {fileID: 1794340523}
+  isnotCount: 0
 --- !u!1 &1119692005
 GameObject:
   m_ObjectHideFlags: 0
@@ -54265,6 +54307,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2086431553}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &1143027552
 GameObject:
   m_ObjectHideFlags: 0
@@ -54967,6 +55010,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1278851329}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &1154166361
 GameObject:
   m_ObjectHideFlags: 0
@@ -55742,6 +55786,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 562332001}
   parent: {fileID: 799241811}
+  isnotCount: 0
 --- !u!1 &1166475609
 GameObject:
   m_ObjectHideFlags: 0
@@ -56278,6 +56323,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 217493578}
   parent: {fileID: 174122877}
+  isnotCount: 0
 --- !u!1 &1174948254
 GameObject:
   m_ObjectHideFlags: 0
@@ -56335,6 +56381,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1544906043}
   parent: {fileID: 1626735293}
+  isnotCount: 0
 --- !u!1 &1175879988
 GameObject:
   m_ObjectHideFlags: 0
@@ -56580,6 +56627,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1752391517}
   parent: {fileID: 1617919972}
+  isnotCount: 0
 --- !u!1 &1187327275
 GameObject:
   m_ObjectHideFlags: 0
@@ -56991,6 +57039,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 366178855}
   parent: {fileID: 490571321}
+  isnotCount: 0
 --- !u!1 &1199523121
 GameObject:
   m_ObjectHideFlags: 0
@@ -57901,6 +57950,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 562568421}
   parent: {fileID: 174122877}
+  isnotCount: 0
 --- !u!1 &1229141133
 GameObject:
   m_ObjectHideFlags: 0
@@ -58940,6 +58990,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 97947663}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &1249789973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60700,6 +60751,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1060899538}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &1277958136
 GameObject:
   m_ObjectHideFlags: 0
@@ -61011,6 +61063,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2092545481}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &1278709371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62008,6 +62061,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2117611509}
   parent: {fileID: 473533921}
+  isnotCount: 0
 --- !u!1 &1290577472
 GameObject:
   m_ObjectHideFlags: 0
@@ -65241,6 +65295,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 416279358}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &1335771055
 GameObject:
   m_ObjectHideFlags: 0
@@ -68223,6 +68278,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 7014869}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &1377833004
 GameObject:
   m_ObjectHideFlags: 0
@@ -68468,6 +68524,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1371066246}
   parent: {fileID: 1942706008}
+  isnotCount: 0
 --- !u!1 &1379966784
 GameObject:
   m_ObjectHideFlags: 0
@@ -69748,6 +69805,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1716802780}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &1403221066
 GameObject:
   m_ObjectHideFlags: 0
@@ -70210,6 +70268,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2008018293}
   parent: {fileID: 1359285249}
+  isnotCount: 0
 --- !u!1 &1405887929
 GameObject:
   m_ObjectHideFlags: 0
@@ -70975,6 +71034,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 188083508}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &1419525759
 GameObject:
   m_ObjectHideFlags: 0
@@ -73205,6 +73265,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 508150394}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &1459690147
 GameObject:
   m_ObjectHideFlags: 0
@@ -73937,6 +73998,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2088716667}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &1467865658
 GameObject:
   m_ObjectHideFlags: 0
@@ -74551,6 +74613,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 25568074}
   parent: {fileID: 860114532}
+  isnotCount: 0
 --- !u!1 &1485061108
 GameObject:
   m_ObjectHideFlags: 0
@@ -75201,6 +75264,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 487508977}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &1493134171
 GameObject:
   m_ObjectHideFlags: 0
@@ -76218,6 +76282,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1700396248}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &1514454696
 GameObject:
   m_ObjectHideFlags: 0
@@ -76410,6 +76475,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 219650925}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &1523716234
 GameObject:
   m_ObjectHideFlags: 0
@@ -76868,6 +76934,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1585913455}
   parent: {fileID: 473533921}
+  isnotCount: 0
 --- !u!1 &1543309699
 GameObject:
   m_ObjectHideFlags: 0
@@ -77850,6 +77917,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 771061779}
   parent: {fileID: 1968248979}
+  isnotCount: 0
 --- !u!1 &1555171632
 GameObject:
   m_ObjectHideFlags: 0
@@ -78568,6 +78636,7 @@ GameObject:
   - component: {fileID: 1570219741}
   - component: {fileID: 1570219740}
   - component: {fileID: 1570219739}
+  - component: {fileID: 1570219743}
   m_Layer: 5
   m_Name: MathsButton
   m_TagString: Untagged
@@ -78666,6 +78735,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1570219743}
+        m_TargetAssemblyTypeName: Prog, Assembly-CSharp
+        m_MethodName: Calcul
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1570219741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78704,6 +78785,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570219737}
   m_CullTransparentMesh: 1
+--- !u!114 &1570219743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570219737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb3f3b12a8b69848adac58d57af950c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moyenneGProg: {fileID: 1471896179}
+  sousProg: {fileID: 778048744}
 --- !u!1 &1571378173
 GameObject:
   m_ObjectHideFlags: 0
@@ -80467,6 +80562,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 872652432}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &1604171555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80829,6 +80925,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 256510039}
   parent: {fileID: 742556441}
+  isnotCount: 0
 --- !u!1 &1612315623
 GameObject:
   m_ObjectHideFlags: 0
@@ -81239,6 +81336,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1502845255}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &1620208649
 GameObject:
   m_ObjectHideFlags: 0
@@ -82413,6 +82511,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 542131061}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &1634733436
 GameObject:
   m_ObjectHideFlags: 0
@@ -82470,6 +82569,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 451797453}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &1641333558
 GameObject:
   m_ObjectHideFlags: 0
@@ -83173,6 +83273,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1312299844}
   parent: {fileID: 54707104}
+  isnotCount: 0
 --- !u!1 &1651833609
 GameObject:
   m_ObjectHideFlags: 0
@@ -83231,6 +83332,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 853061531}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &1651833612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85361,6 +85463,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1449362239}
   parent: {fileID: 778048744}
+  isnotCount: 0
 --- !u!114 &1713486163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89253,6 +89356,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 2104600240}
   parent: {fileID: 1679209705}
+  isnotCount: 0
 --- !u!1 &1763463330
 GameObject:
   m_ObjectHideFlags: 0
@@ -89566,6 +89670,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 636517093}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &1779976555
 GameObject:
   m_ObjectHideFlags: 0
@@ -90526,6 +90631,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1551065609}
   parent: {fileID: 511288649}
+  isnotCount: 0
 --- !u!1 &1813584891
 GameObject:
   m_ObjectHideFlags: 0
@@ -91144,6 +91250,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 944622710}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &1828401291
 GameObject:
   m_ObjectHideFlags: 0
@@ -91982,6 +92089,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 712173838}
   parent: {fileID: 105694522}
+  isnotCount: 0
 --- !u!1 &1843977426
 GameObject:
   m_ObjectHideFlags: 0
@@ -93826,6 +93934,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 843743301}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &1876818329
 GameObject:
   m_ObjectHideFlags: 0
@@ -94497,6 +94606,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 825216288}
   parent: {fileID: 1087543171}
+  isnotCount: 0
 --- !u!1 &1901415414
 GameObject:
   m_ObjectHideFlags: 0
@@ -94554,6 +94664,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 975437026}
   parent: {fileID: 2048770813}
+  isnotCount: 0
 --- !u!1 &1901538150
 GameObject:
   m_ObjectHideFlags: 0
@@ -95585,6 +95696,7 @@ MonoBehaviour:
   coeff: 3
   InputField: {fileID: 800152687}
   parent: {fileID: 1857503495}
+  isnotCount: 0
 --- !u!1 &1919454231
 GameObject:
   m_ObjectHideFlags: 0
@@ -100158,6 +100270,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1370498980}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &2006382004
 GameObject:
   m_ObjectHideFlags: 0
@@ -102443,6 +102556,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1301812948}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &2041949662
 GameObject:
   m_ObjectHideFlags: 0
@@ -104141,6 +104255,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1377833004}
   parent: {fileID: 812660838}
+  isnotCount: 0
 --- !u!1 &2075737968
 GameObject:
   m_ObjectHideFlags: 0
@@ -104333,6 +104448,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 155073074}
   parent: {fileID: 1794340523}
+  isnotCount: 0
 --- !u!1 &2081553110
 GameObject:
   m_ObjectHideFlags: 0
@@ -106001,6 +106117,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 1361497113}
   parent: {fileID: 1727953626}
+  isnotCount: 0
 --- !u!1 &2102903973
 GameObject:
   m_ObjectHideFlags: 0
@@ -107569,6 +107686,7 @@ MonoBehaviour:
   coeff: 1
   InputField: {fileID: 167059882}
   parent: {fileID: 1707645237}
+  isnotCount: 0
 --- !u!1 &2141256458
 GameObject:
   m_ObjectHideFlags: 0

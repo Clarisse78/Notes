@@ -26,10 +26,6 @@ public class TpProg : MonoBehaviour
         AllTp = new List<Note>();
         allNotesTp = new List<float>();
         actualTp = GetComponent<Note>();
-        for (int i = 0; i < actualTp.parent.transform.childCount; i++)
-            AllTp.Add(parent.transform.GetChild(i).GetComponent<Note>());
-        for (int i = 0; i < parent.transform.childCount; i++)
-            allNotesTp.Add(AllTp[i].note);
         Min();
         instance = this;
     }
@@ -42,7 +38,6 @@ public class TpProg : MonoBehaviour
 
     public void AddTPNote(int current)
     {
-        //Debug.Log(currentMinTp.note);
         if (actualTp.note < 0 || actualTp.note > 20)
         {
             allNotesTp[current] = -1;
@@ -56,15 +51,16 @@ public class TpProg : MonoBehaviour
             if (actualTp.note == -1)
             {
                 actualTp.notetext.color = Color.black;
+                actualTp.isnotCount = false;
                 var withoutone = new List<float>();
                 for (int i = 0; i < allNotesTp.Count; i++)
                 {
-                    if (allNotesTp[i] != -1)
+                    if (allNotesTp[i] != -1 && i != current)
                     {
                         withoutone.Add(allNotesTp[i]);
                     }
                 }
-                if (withoutone.Count > 1)
+                if (withoutone.Count > 0)
                 {
                     currentMinTp = AllTp[allNotesTp.IndexOf(withoutone.Min())];
                     if (currentMinTp != actualTp)
@@ -72,6 +68,7 @@ public class TpProg : MonoBehaviour
                         currentMinTp.notetext.color = Color.red;
                     }
                     saveMinNote = withoutone.Min();
+                    currentMinTp.isnotCount = true;
                 }
                 else
                 {
@@ -99,6 +96,7 @@ public class TpProg : MonoBehaviour
                         actualTp.notetext.color = Color.black;
                     }
                     saveMinNote = withoutone.Min();
+                    currentMinTp.isnotCount = true;
                 }
                 else
                 {
