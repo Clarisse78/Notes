@@ -74451,7 +74451,7 @@ MonoBehaviour:
   textmoyenne2: {fileID: 1489787036}
   name: 
   NotesAsses: []
-  megaCoef: 2
+  megaCoef: 1
   isUCUE: 1
 --- !u!114 &1478739688
 MonoBehaviour:

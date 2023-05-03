@@ -21,7 +21,6 @@ public class Prog : MonoBehaviour
 
     public void Calcul()
     {
-        Debug.Log("oui");
         sousProg.calculMoyenne();
         moyenneGProg.moyenneGtext();
     }
