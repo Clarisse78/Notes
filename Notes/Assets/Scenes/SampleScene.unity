@@ -62367,7 +62367,7 @@ MonoBehaviour:
   moyenneGText: {fileID: 381268391}
   finalNote: 0
   name: Suivi
-  moyenneG: {fileID: 879993011}
+  moyenneG: {fileID: 928118556}
 --- !u!114 &1292780466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72076,7 +72076,7 @@ MonoBehaviour:
   moyenneGText: {fileID: 584078077}
   finalNote: 0
   name: Suivi
-  moyenneG: {fileID: 879993011}
+  moyenneG: {fileID: 2096899502}
 --- !u!224 &1429174449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -96521,7 +96521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Moyenne G\xE9n\xE9ral Anglais TIM : N/a"
+  m_text: "Moyenne G\xE9n\xE9ral Anglais CIE : N/a"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -105691,7 +105691,7 @@ MonoBehaviour:
   moyenneG: 0
   textmoyenne: {fileID: 1938960872}
   textmoyenne2: {fileID: 1319509970}
-  name: Anglais TIM
+  name: Anglais CIE
   NotesAsses:
   - {fileID: 679750497}
   - {fileID: 1087543171}
