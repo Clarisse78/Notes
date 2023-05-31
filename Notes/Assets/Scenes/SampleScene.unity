@@ -29256,7 +29256,7 @@ MonoBehaviour:
   moyenneGText: {fileID: 1148266940}
   finalNote: 0
   name: Suivi
-  moyenneG: {fileID: 879993011}
+  moyenneG: {fileID: 1294435677}
 --- !u!224 &593145717
 RectTransform:
   m_ObjectHideFlags: 0
@@ -84024,7 +84024,7 @@ MonoBehaviour:
   moyenneGText: {fileID: 211448577}
   finalNote: 0
   name: QCMs
-  moyenneG: {fileID: 879993011}
+  moyenneG: {fileID: 1294435677}
 --- !u!224 &1679209706
 RectTransform:
   m_ObjectHideFlags: 0
