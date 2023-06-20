@@ -5,6 +5,7 @@ using System.Globalization;
 using UnityEngine;
 using System.IO;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -20,19 +21,28 @@ public class Menu : MonoBehaviour
     public static GameObject CurrentUCUE;
 
     public static Menu instance;
+
+    public static int numberSemester;
+
+    public int S;
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
-        if (!File.Exists(Application.dataPath + "/save.txt"))
+        if (numberSemester == 0)
         {
-            File.Create(Application.dataPath + "/save.txt");
+            numberSemester = S;
+        }
+        instance = this;
+        if (!File.Exists(Application.dataPath + $"/save{numberSemester}.txt"))
+        {
+            File.Create(Application.dataPath + $"/save{numberSemester}.txt");
             for (int i = 0; i < allMatiere.Count; i++)
                 allMatiere[i].SetActive(false);
+            SaveAll();
         }
         else
         {
-            var save= File.ReadAllText(Application.dataPath + "/save.txt");
+            var save= File.ReadAllText(Application.dataPath + $"/save{numberSemester}.txt");
             var saveMatiere = save.Split("FIN MATIERE");
             List<string[]> saveNoteAs = new List<string[]>();
             for (int i = 0; i < saveMatiere.Length; i++)
@@ -51,6 +61,11 @@ public class Menu : MonoBehaviour
                         }
                     }
                     allMatiere[i].SetActive(false);
+                    if (allSave[i].name == "Prog")
+                    {
+                        TpProg.instance.Min();
+                        allMatiere[i].transform.GetChild(4).GetComponent<Maths>().textmoyenne2.transform.parent.GetChild(0).GetComponent<Prog>().Calcul();
+                    }
                 }
                 else if (allSave[i] is PtAnac)
                 {
@@ -58,7 +73,6 @@ public class Menu : MonoBehaviour
                     allSave[i].moyenneGtext();
                 }
             }
-            TpProg.instance.Min();
             CalculMoyenneGeneral();
         }
         menuPrincipale = GameObject.FindGameObjectWithTag("Menu");
@@ -82,31 +96,32 @@ public class Menu : MonoBehaviour
         string save = "";
         for (int i = 0; i < allSave.Count; i++)
         {
-            if (allSave[i] is not SI && allSave[i] is not PtAnac)
+            var allS = allSave[i];
+            if (allS is not SI && allS is not PtAnac)
             {
-                for (int j = 0; j < allSave[i].NotesAsses.Count; j++)
+                for (int j = 0; j < allS.NotesAsses.Count; j++)
                 {
-                    for (int k = 0; k < allSave[i].NotesAsses[j].notes.Count-1; k++)
+                    for (int k = 0; k < allS.NotesAsses[j].notes.Count-1; k++)
                     {
-                        save += $"{allSave[i].NotesAsses[j].notes[k].note}";
+                        save += $"{allS.NotesAsses[j].notes[k].note}";
                         save += "|";
                     }
-                    save += $"{allSave[i].NotesAsses[j].notes[^1].note}";
+                    save += $"{allS.NotesAsses[j].notes[^1].note}";
                     save += "*";
                     save += "\n";
                 }
                 save += "FIN MATIERE";
             }
-            else if (allSave[i] is PtAnac)
+            else if (allS is PtAnac)
             {
-                save += $"{allSave[i].moyenneG}";
+                save += $"{allS.moyenneG}";
                 save += "|";
                 save += "*";
                 save += "\n";
                 save += "FIN MATIERE";
             }
         }
-        File.WriteAllText(Application.dataPath + "/" + "save" + ".txt", save);
+        File.WriteAllText(Application.dataPath + "/" + $"/save{numberSemester}.txt", save);
     }
 
     public void CalculMoyenneGeneral()
@@ -148,5 +163,10 @@ public class Menu : MonoBehaviour
     public void QuitApplication()
     {
         Application.Quit();
+    }
+
+    public void Return()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
