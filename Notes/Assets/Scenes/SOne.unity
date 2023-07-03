@@ -9641,10 +9641,10 @@ RectTransform:
   m_Father: {fileID: 185128783}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 291, y: -3}
-  m_SizeDelta: {x: -1140, y: -744}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6, y: -4}
+  m_SizeDelta: {x: 587.156, y: 330.27527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177859063
 MonoBehaviour:
@@ -9666,7 +9666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e8e80e0aefe4f7b4f93fcf200010d2f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cac015131bbf28941bc6d9bc16bd82e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20424,7 +20424,7 @@ RectTransform:
   m_GameObject: {fileID: 394920810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 662955056}
@@ -20432,7 +20432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -216.28937, y: 190.09753}
+  m_AnchoredPosition: {x: -216.2894, y: 190.09752}
   m_SizeDelta: {x: 277.32, y: 52.4459}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394920812
@@ -28697,7 +28697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -71, y: 0.0004272461}
+  m_AnchoredPosition: {x: -71, y: 0.00048828125}
   m_SizeDelta: {x: -1201.3937, y: -619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662955057
@@ -50320,6 +50320,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 662955059}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: ResetCurrentUCUE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1193398311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58662,7 +58674,7 @@ RectTransform:
   m_GameObject: {fileID: 1344142347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 298294805}
@@ -58675,7 +58687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -215.45886, y: -25.999573}
+  m_AnchoredPosition: {x: -215.4589, y: -25.999586}
   m_SizeDelta: {x: 275.66, y: 364.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344142349

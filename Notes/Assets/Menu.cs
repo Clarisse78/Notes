@@ -35,9 +35,10 @@ public class Menu : MonoBehaviour
         instance = this;
         if (!File.Exists(Application.dataPath + $"/save{numberSemester}.txt"))
         {
-            File.Create(Application.dataPath + $"/save{numberSemester}.txt");
+            var okk = File.Create(Application.dataPath + $"/save{numberSemester}.txt");
             for (int i = 0; i < allMatiere.Count; i++)
                 allMatiere[i].SetActive(false);
+            okk.Close();
             SaveAll();
         }
         else
@@ -168,5 +169,10 @@ public class Menu : MonoBehaviour
     public void Return()
     {
         SceneManager.LoadScene("Menu");
+    }
+    
+    public void ResetCurrentUCUE()
+    {
+        CurrentUCUE = null;
     }
 }

@@ -10099,10 +10099,10 @@ RectTransform:
   m_Father: {fileID: 185128783}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 291, y: -3}
-  m_SizeDelta: {x: -1140, y: -744}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 587.15594, y: 330.27524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177859063
 MonoBehaviour:
@@ -10124,7 +10124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e8e80e0aefe4f7b4f93fcf200010d2f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cac015131bbf28941bc6d9bc16bd82e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33876,6 +33876,18 @@ MonoBehaviour:
       - m_Target: {fileID: 662955059}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Return
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662955059}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: ResetCurrentUCUE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
