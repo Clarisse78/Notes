@@ -42,7 +42,7 @@ public class PtAnac : Notes
     {
         if (moyenneG == 20)
         {
-            moyenneG = 0;
+            moyenneG = -1;
         }
         else
         {
@@ -55,9 +55,13 @@ public class PtAnac : Notes
     {
         if (moyenneG == 0)
         {
+            moyenneG = -1;
+        }
+        else if (moyenneG == -1)
+        {
             moyenneG = 20;
         }
-        else
+        else 
         {
             moyenneG -= 1;
         }
