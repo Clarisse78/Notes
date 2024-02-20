@@ -67,6 +67,12 @@ public class Menu : MonoBehaviour
                         TpProg.instance.Min();
                         allMatiere[i].transform.GetChild(4).GetComponent<Maths>().textmoyenne2.transform.parent.GetChild(0).GetComponent<Prog>().Calcul();
                     }
+                    else if (allSave[i].name == "THLR")
+                    {
+                        TpTHLR.instance.Min();
+                        DMsTHLR.instance.Min();
+                        allMatiere[i].transform.GetChild(5).GetComponent<Maths>().textmoyenne2.transform.parent.GetChild(0).GetComponent<THLR>().Calcul();
+                    }
                 }
                 else if (allSave[i] is PtAnac)
                 {

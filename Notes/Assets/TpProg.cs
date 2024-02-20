@@ -38,6 +38,10 @@ public class TpProg : MonoBehaviour
 
     public void AddTPNote(int current)
     {
+        //Debug.Log("Actual: " + actualTp.name + "Min: " + currentMinTp.name);
+        //Debug.Log(actualTp.name == currentMinTp.name);
+        //Debug.Log(actualTp.note > saveMinNote);
+       // Debug.Log("Actual: " + actualTp.note + "Min: " + saveMinNote);
         if (actualTp.note < 0 || actualTp.note > 20)
         {
             allNotesTp[current] = -1;
@@ -60,13 +64,44 @@ public class TpProg : MonoBehaviour
                         withoutone.Add(allNotesTp[i]);
                     }
                 }
-                if (withoutone.Count > 0)
+                if (withoutone.Count > 1)
                 {
                     currentMinTp = AllTp[allNotesTp.IndexOf(withoutone.Min())];
                     if (currentMinTp != actualTp)
                     {
                         currentMinTp.notetext.color = Color.red;
                     }
+                    saveMinNote = withoutone.Min();
+                    currentMinTp.isnotCount = true;
+                }
+                else
+                {
+                    currentMinTp = null;
+                    saveMinNote = 20;
+                }
+            }
+            else if (actualTp.note > saveMinNote)
+            {
+                actualTp.notetext.color = Color.black;
+                actualTp.isnotCount = false;
+                currentMinTp = actualTp;
+                saveMinNote = actualTp.note;
+                var withoutone = new List<float>();
+                
+                for (int i = 0; i < allNotesTp.Count; i++)
+                {
+                    if (allNotesTp[i] != -1)
+                    {
+                        Debug.Log(AllTp[i]);                
+                        withoutone.Add(allNotesTp[i]);
+                    }
+                }
+                Debug.Log("Number: " + withoutone.Count);
+                if (withoutone.Count > 1)
+                {
+                    currentMinTp = AllTp[allNotesTp.IndexOf(withoutone.Min())];
+                    currentMinTp.notetext.color = Color.red;
+                    
                     saveMinNote = withoutone.Min();
                     currentMinTp.isnotCount = true;
                 }
@@ -109,18 +144,27 @@ public class TpProg : MonoBehaviour
         {
             if (currentMinTp == null)
             {
-                if (actualTp.note < 0 || actualTp.note > 20)
+                var withoutone = new List<float>();
+                for (int i = 0; i < allNotesTp.Count; i++)
                 {
-                    saveMinNote = -1;
+                    if (allNotesTp[i] != -1)
+                    {
+                        withoutone.Add(allNotesTp[i]);
+                    }
+                }
+                if (withoutone.Count > 1)
+                {
+                    currentMinTp = AllTp[allNotesTp.IndexOf(withoutone.Min())];
+                    currentMinTp.notetext.color = Color.red;
+                    
+                    saveMinNote = withoutone.Min();
+                    currentMinTp.isnotCount = true;
                 }
                 else
                 {
-                    saveMinNote = actualTp.note;
+                    currentMinTp = null;
+                    saveMinNote = 20;
                 }
-                actualTp.isnotCount = true;
-                currentMinTp.isnotCount = false;
-                actualTp.notetext.color = Color.red;
-                currentMinTp = actualTp;
             }
             else if (actualTp.note < saveMinNote)
             {
@@ -132,6 +176,7 @@ public class TpProg : MonoBehaviour
                 {
                     saveMinNote = actualTp.note;
                 }
+
                 actualTp.isnotCount = true;
                 currentMinTp.isnotCount = false;
                 UpdateTextNoteMin();
@@ -150,7 +195,7 @@ public class TpProg : MonoBehaviour
                     withoutone.Add(allNotesTp[i]);
                 }
             }
-            if (withoutone.Count > 0)
+            if (withoutone.Count > 1)
             {
                 currentMinTp = AllTp[allNotesTp.IndexOf(withoutone.Min())];
                 if (currentMinTp != actualTp)
@@ -162,6 +207,8 @@ public class TpProg : MonoBehaviour
             }
             else
             {
+                currentMinTp.isnotCount = false;
+                currentMinTp.notetext.color = Color.black;
                 currentMinTp = null;
                 saveMinNote = 20;
             }
