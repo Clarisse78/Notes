@@ -1,3 +1,3 @@
-# Projet Perso
+# Grades
 
-Here there are some projects I have made on my own.
+Here is a projet for calculte your grade for S1, S2 and S3 (for 2027 promotion)
